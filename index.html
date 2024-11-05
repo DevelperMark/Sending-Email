@@ -180,9 +180,9 @@
         placeholder="Write Your Massege"
         required
       />
-      <input type="hidden" name="MAX_FILE_SIZE" value="10" />
       <label>NIN:</label>
       <input
+        id="file"
         type="file"
         name="attachment"
         accept="application/pdf,application/vnd.ms-excel"
@@ -190,4 +190,14 @@
       <button type="submit">Send</button>
     </form>
   </body>
+  <script>
+    var uploadField = document.getElementById("file");
+
+    uploadField.onchange = function () {
+      if ((this.files[0].size > 174, 762)) {
+        alert("File is too big!");
+        this.value = "";
+      }
+    };
+  </script>
 </html>
