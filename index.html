@@ -104,9 +104,6 @@
           border-radius: 30px;
         }
       }
-      h1{
-        background-image;: ../;
-      }
     </style>
     <div class="header">
       <h1>Input Field To Send Massage To An Email</h1>
@@ -129,6 +126,16 @@
         placeholder="Write Your Massege"
         required
       />
+      <input
+        type="hidden"
+        name="_next"
+        value="https://develpermark.github.io/Sending-Email/success.html"
+      />
+      <textarea name="message" placeholder="Details of your problem"></textarea
+      ><textarea
+        name="message"
+        placeholder="Details of your problem"
+      ></textarea>
       <input type="file" name="attachment" accept="image/png, image/jpeg" />
       <button type="submit">Send</button>
     </form>
