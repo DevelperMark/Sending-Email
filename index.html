@@ -113,30 +113,30 @@
       method="POST"
       enctype="multipart/form-data"
     >
-      <input type="hidden" name="_captcha" value="false" />
-      <input type="name" name="email" placeholder="Enter Your Email" required />
-      <input
-        type="hidden"
-        name="_subject"
-        value="New Email for Developer Mark"
-      />
-      <input
-        type="text"
-        name="name"
-        placeholder="Write Your Massege"
-        required
-      />
       <input
         type="hidden"
         name="_next"
         value="https://develpermark.github.io/Sending-Email/success.html"
       />
-      <textarea name="message" placeholder="Details of your problem"></textarea
-      ><textarea
-        name="message"
-        placeholder="Details of your problem"
-      ></textarea>
-      <input type="file" name="attachment" accept="image/png, image/jpeg" />
+      <input type="hidden" name="_captcha" value="false" />
+      <!-- <input type="name" name="email" placeholder="Enter Your Email" required /> -->
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Email for Developer Mark"
+      />
+      <!-- <input
+        type="text"
+        name="name"
+        placeholder="Write Your Massege"
+        required
+      /> -->
+
+      <input
+        type="file"
+        name="attachment"
+        accept="image/png, PDF, image/jpeg"
+      />
       <button type="submit">Send</button>
     </form>
   </body>
