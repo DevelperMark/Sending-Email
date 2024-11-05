@@ -20,17 +20,52 @@
         flex-direction: column;
         text-align: center;
         height: 100vh;
+        /* line-height: 90%; */
+        margin-bottom: 40%;
         color: #fff;
       }
+
       .back a {
         text-decoration: none;
         font-size: 20px;
+        /* margin-top: 90%; */
         padding: 20px;
         color: black;
         background: #fff;
       }
       h1 {
         font-size: 6rem;
+      }
+      @media (max-width: 890px) {
+        h1 {
+          font-size: 4rem;
+        }
+      }
+
+      @media (max-width: 450px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .back a {
+          text-decoration: none;
+          font-size: 18px;
+          padding: 15px;
+          color: black;
+          width: 190%;
+          background: #fff;
+        }
+      }
+
+      @media (max-width: 177px) {
+        .back a {
+          text-decoration: none;
+          font-size: 16px;
+          padding: 12px;
+          color: black;
+
+          background: #fff;
+        }
       }
     </style>
     <div class="container">
