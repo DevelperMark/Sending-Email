@@ -10,13 +10,13 @@
       form {
         display: flex;
         align-items: center;
-        margin-top: 4%;
+        margin-top: 2%;
         background: navy;
         padding: 20px;
         width: 50%;
         border-radius: 30px;
         margin-left: 23%;
-        height: 333px;
+        height: 444px;
         flex-direction: column;
         justify-content: center;
       }
@@ -60,7 +60,7 @@
           margin-left: 10%;
           margin-right: 10%;
           overflow: hidden;
-          height: 333px;
+          height: 444px;
           flex-direction: column;
           justify-content: center;
         }
@@ -90,7 +90,7 @@
           width: 80%;
           border-radius: 30px;
           margin-left: 6%;
-          height: 333px;
+          height: 444px;
           flex-direction: column;
           justify-content: center;
         }
@@ -104,6 +104,9 @@
           border-radius: 30px;
         }
       }
+      h1{
+        background-image;: ../;
+      }
     </style>
     <div class="header">
       <h1>Input Field To Send Massage To An Email</h1>
@@ -111,6 +114,7 @@
     <form
       action="https://formsubmit.co/3e06b3ae78c48ce183acb6490505cd6f"
       method="POST"
+      enctype="multipart/form-data"
     >
       <input type="hidden" name="_captcha" value="false" />
       <input type="name" name="email" placeholder="Enter Your Email" required />
@@ -125,6 +129,7 @@
         placeholder="Write Your Massege"
         required
       />
+      <input type="file" name="attachment" accept="image/png, image/jpeg" />
       <button type="submit">Send</button>
     </form>
   </body>
