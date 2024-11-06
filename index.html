@@ -31,7 +31,7 @@
         border: none;
         outline: none;
         border-radius: 30px;
-        margin: 20px;
+        margin: 4px;
       }
       button {
         background: rgb(2, 53, 2);
@@ -187,11 +187,26 @@
         name="attachment"
         accept="application/pdf,application/vnd.ms-excel"
       />
+      <label>Salary Statement:</label>
+      <input
+        id="salary"
+        type="file"
+        name="attachment"
+        accept="application/pdf,application/vnd.ms-excel"
+      />
       <button type="submit">Send</button>
     </form>
   </body>
   <script>
     var uploadField = document.getElementById("file");
+
+    uploadField.onchange = function () {
+      if (this.files[0].size > 297152) {
+        alert("File is too big!");
+        this.value = "";
+      }
+    };
+    var uploadField = document.getElementById("salary");
 
     uploadField.onchange = function () {
       if (this.files[0].size > 297152) {
